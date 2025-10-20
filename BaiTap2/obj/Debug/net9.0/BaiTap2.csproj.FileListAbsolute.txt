@@ -1,0 +1,15 @@
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/bin/Debug/net9.0/BaiTap2
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/bin/Debug/net9.0/BaiTap2.deps.json
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/bin/Debug/net9.0/BaiTap2.runtimeconfig.json
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/bin/Debug/net9.0/BaiTap2.dll
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/bin/Debug/net9.0/BaiTap2.pdb
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/BaiTap2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/BaiTap2.AssemblyInfoInputs.cache
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/BaiTap2.AssemblyInfo.cs
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/BaiTap2.csproj.CoreCompileInputs.cache
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/BaiTap2.sourcelink.json
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/BaiTap2.dll
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/refint/BaiTap2.dll
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/BaiTap2.pdb
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/BaiTap2.genruntimeconfig.cache
+/Users/huy/CODING/Learn-C#/LTTQ_Quy_Sensei_2/BaiTap2/obj/Debug/net9.0/ref/BaiTap2.dll

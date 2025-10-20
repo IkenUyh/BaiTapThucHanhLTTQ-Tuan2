@@ -67,9 +67,7 @@ namespace FileExplorer
                 {
                     path = NormalizePath(Console.ReadLine());
                     if (!Directory.Exists(path))
-                    {
                         Console.WriteLine("Duong dan khong ton tai! Vui long thu lai.");
-                    }
                 } while (!Directory.Exists(path));
             }
             catch
@@ -81,7 +79,6 @@ namespace FileExplorer
         public void Xuat()
         {
             Console.WriteLine("Da truy cap vao duong dan " + path);
-
             string[] files = Directory.GetFiles(path);
             if (files.Length == 0) Console.WriteLine("Duong dan nay khong co file nao!");
             else Console.WriteLine("Cac file co trong duong dan:");
@@ -90,7 +87,6 @@ namespace FileExplorer
                 FileInfo in4 = new FileInfo(file);
                 Console.WriteLine($"{in4.LastWriteTime:dd/MM/yyyy hh:mm tt}\t{in4.Length} Bytes\t{in4.Name}");
             }
-
             string[] folders = Directory.GetDirectories(path);
             if (folders.Length == 0) Console.WriteLine("Duong dan nay khong co thu muc nao!");
             else Console.WriteLine("Cac thu muc co trong duong dan:");
@@ -102,9 +98,7 @@ namespace FileExplorer
 
             long s = 0;
             foreach (string file in files)
-            {
                 s += new FileInfo(file).Length;
-            }
             string root = Path.GetPathRoot(path);
             if (!string.IsNullOrEmpty(root))
             {

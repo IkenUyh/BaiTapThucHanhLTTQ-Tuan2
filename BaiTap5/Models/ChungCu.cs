@@ -7,9 +7,7 @@ namespace BaiTapNew.Models
     {
         private int tang;
         private static int dem = 0;
-
         private bool disposed = false;
-
         public void Dispose()
         {
             if (!disposed)
@@ -19,29 +17,24 @@ namespace BaiTapNew.Models
                 disposed = true;
             }
         }
-
         public ChungCu() : base()
         {
             tang = 0;
             dem++;
         }
-
         public ChungCu(string diaDiem, double giaBan, double dienTich, int tang)
             : base(diaDiem, giaBan, dienTich)
         {
             this.tang = tang;
             dem++;
         }
-
         public ChungCu(ChungCu other) : base(other)
         {
             tang = other.tang;
             dem++;
         }
-
         public int GetTang() => tang;
         public static new int GetDem() => dem;
-
         public void SetTang(int value)
         {
             while (value <= 0)
@@ -59,7 +52,6 @@ namespace BaiTapNew.Models
             }
             tang = value;
         }
-
         public override void Nhap()
         {
             base.Nhap();
@@ -80,13 +72,11 @@ namespace BaiTapNew.Models
             } while (temp <= 0);
             tang = temp;
         }
-
         public override void Xuat()
         {
             base.Xuat();
             Console.WriteLine("Tang: " + tang);
         }
-
         public override string GetLoai() => "Chung Cu";
     }
 }

@@ -9,9 +9,7 @@ namespace BaiTapNew.Services
         private BatDongSan[] ct;
         private int sl;
         private static int dem = 0;
-
         private bool disposed = false;
-
         public void Dispose()
         {
             if (!disposed)
@@ -25,14 +23,12 @@ namespace BaiTapNew.Services
                 disposed = true;
             }
         }
-
         public CongTy()
         {
             sl = 0;
             ct = null;
             dem++;
         }
-
         public CongTy(int sl)
         {
             this.sl = sl;
@@ -44,7 +40,6 @@ namespace BaiTapNew.Services
             }
             dem++;
         }
-
         public CongTy(CongTy other)
         {
             sl = other.sl;
@@ -63,10 +58,8 @@ namespace BaiTapNew.Services
             }
             dem++;
         }
-
         public int GetSoLuong() => sl;
         public static int GetDem() => dem;
-
         public void SetSoLuong(int value)
         {
             while (value < 1)
@@ -84,7 +77,6 @@ namespace BaiTapNew.Services
             }
             sl = value;
         }
-
         public void Nhap()
         {
             int loai;
@@ -127,7 +119,6 @@ namespace BaiTapNew.Services
                 ct[i].Nhap();
             }
         }
-
         public void Xuat()
         {
             if (ct == null || sl == 0) Console.WriteLine("Danh sach bat dong san rong");
@@ -142,7 +133,6 @@ namespace BaiTapNew.Services
                 }
             }
         }
-
         public void TongGiaBan()
         {
             double tongKhuDat = 0, tongNhaPho = 0, tongChungCu = 0;
@@ -156,7 +146,6 @@ namespace BaiTapNew.Services
             Console.WriteLine("Tong gia ban Nha Pho: " + tongNhaPho.ToString("F0"));
             Console.WriteLine("Tong gia ban Chung Cu: " + tongChungCu.ToString("F0"));
         }
-
         public void DanhSachDacBiet()
         {
             bool check = false;
@@ -180,7 +169,6 @@ namespace BaiTapNew.Services
             }
             if (!check) Console.WriteLine("Khong co bat dong san thoa man");
         }
-
         public void TimKiem()
         {
             Console.WriteLine("\n===== TIM KIEM NHA PHO HOAC CHUNG CU =====\n");
@@ -216,7 +204,6 @@ namespace BaiTapNew.Services
                     dienTichMin = -1;
                 }
             } while (dienTichMin <= 0);
-
             bool check = false;
             for (int i = 0; i < sl; i++)
             {

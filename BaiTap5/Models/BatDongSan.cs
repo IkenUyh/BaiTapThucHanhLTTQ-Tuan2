@@ -9,9 +9,7 @@ namespace BaiTapNew.Models
         protected double giaBan;
         protected double dienTich;
         protected static int dem = 0;
-
         private bool disposed = false;
-
         public void Dispose()
         {
             if (!disposed)
@@ -21,7 +19,6 @@ namespace BaiTapNew.Models
                 disposed = true;
             }
         }
-
         public BatDongSan()
         {
             diaDiem = "";
@@ -29,7 +26,6 @@ namespace BaiTapNew.Models
             dienTich = 0;
             dem++;
         }
-
         public BatDongSan(string diaDiem, double giaBan, double dienTich)
         {
             this.diaDiem = diaDiem;
@@ -37,7 +33,6 @@ namespace BaiTapNew.Models
             this.dienTich = dienTich;
             dem++;
         }
-
         public BatDongSan(BatDongSan other)
         {
             diaDiem = other.diaDiem;
@@ -45,14 +40,11 @@ namespace BaiTapNew.Models
             dienTich = other.dienTich;
             dem++;
         }
-
         public string GetDiaDiem() => diaDiem;
         public double GetGiaBan() => giaBan;
         public double GetDienTich() => dienTich;
         public static int GetDem() => dem;
-
         public void SetDiaDiem(string value) => diaDiem = value;
-
         public void SetGiaBan(double value)
         {
             while (value <= 0)
@@ -70,7 +62,6 @@ namespace BaiTapNew.Models
             }
             giaBan = value;
         }
-
         public void SetDienTich(double value)
         {
             while (value <= 0)
@@ -88,7 +79,6 @@ namespace BaiTapNew.Models
             }
             dienTich = value;
         }
-
         public virtual void Nhap()
         {
             Console.Write("Nhap dia diem: ");
@@ -125,7 +115,6 @@ namespace BaiTapNew.Models
             } while (temp <= 0);
             dienTich = temp;
         }
-
         public virtual void Xuat()
         {
             Console.WriteLine("Dia diem: " + diaDiem);
@@ -133,7 +122,6 @@ namespace BaiTapNew.Models
             Console.WriteLine("Dien tich (m2): " + dienTich.ToString("F2"));
             Console.WriteLine("Loai: " + GetLoai());
         }
-
         public abstract string GetLoai();
     }
 }
